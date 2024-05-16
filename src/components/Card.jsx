@@ -6,8 +6,8 @@ const Card = ({ title, url, urlToImage, content }) => {
     <div className={styles.card}>
       <img src={urlToImage} alt={title} />
       <div>
-        <h3> {title} </h3>
-        <p> {content} </p>
+        <h3 className={styles.cardTitle}> {title} </h3>
+        <p className={styles.cardBody}> {content} </p>
         <div className={styles.a}>
           <a
             href={url}
@@ -15,7 +15,7 @@ const Card = ({ title, url, urlToImage, content }) => {
             rel="noreferrer"
             className={styles.link}
           >
-            Detail
+            Read Article
           </a>
         </div>
       </div>
